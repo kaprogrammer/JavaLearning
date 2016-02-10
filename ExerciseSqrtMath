@@ -1,0 +1,16 @@
+public class ExerciseSqrtMath 
+{
+	/**@param number given by user
+	 * @return sqrt approximate int based on Pell's equation*/
+	int sqroot (int num)
+	{
+		int resultsqrt = 0, odds = 1;
+		while(num>=odds)
+		{
+			num -= odds;
+			odds += 2;
+			resultsqrt++;
+		}
+		return resultsqrt;
+	}
+}
