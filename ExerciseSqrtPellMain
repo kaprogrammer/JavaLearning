@@ -1,0 +1,27 @@
+import java.util.Scanner;
+/**
+*Exercise 2
+*/
+
+public class ExerciseSqrtPell 
+{
+	public static void main(String[] args)
+	{
+		int x=1;
+		while (x!=0)
+		{
+			Scanner s = new Scanner(System.in);
+			int resultPell;
+			MatematicaReturn sqrtPell = new MathematicalReturn();
+			System.out.println("Approximate Square Root based on Pell's Equation\n");
+			System.out.println("Input the desired number or 0 to exit:");
+			
+			x = s.nextInt();
+			if (x>0)
+			{
+				resultPell = sqrtPell.sqroot(x);
+				System.out.println(resultPell);
+			}
+		}
+	}
+}
