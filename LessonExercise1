@@ -1,0 +1,26 @@
+/**
+*Lesson 01 Exercise
+*/
+
+//importing used library 
+import java.util.Scanner;
+
+public class SimpleSumMain
+{
+    public static void main(String[] args)
+    {
+        //declaring variables
+        int x,y,sum;
+        //creating new scanner object
+        Scanner s = new Scanner(System.in);
+        
+        System.out.println("Basic Sum Exercise.\n");
+        System.out.println("Write the first integer number to add and hit enter.");
+        x = s.nextInt();
+        System.out.println("Write the second integer number and hit enter.");
+        y = s.nextInt();
+        sum = x+y;
+        System.out.println("Total:"+ sum);
+           
+        }
+    }
